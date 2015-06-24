@@ -1,4 +1,4 @@
-package com.ninja_squad.geektic.service;
+package com.ninja_squad.geektic.DAO;
 
 import com.ninja_squad.geektic.Model.Geek;
 import org.springframework.stereotype.Repository;
@@ -26,9 +26,9 @@ public class DAOGeek {
         return query.getResultList();
     }
 
-
     public void getByIdElement() {
         entityManager.find(Geek.class,4);
         //return element;
     }
+
 }

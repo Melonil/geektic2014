@@ -50,10 +50,11 @@ public class Geek {
     public Geek (){
 
     }
-    public Geek(String nom, String prenom,int sexe){
+    public Geek(String nom, String prenom,int sexe, String email){
         this.nom=nom;
         this.prenom=prenom;
         this.sexe=sexe;
+        this.email=email;
     }
 
 

@@ -1,0 +1,1 @@
+13:49:15,036 DEBUG Test worker hibernate.SQL:109 - select geek0_.id as id1_0_, geek0_.email as email2_0_, geek0_.nom as nom3_0_, geek0_.prenom as prenom4_0_, geek0_.sexe as sexe5_0_ from USER geek0_ where 1=1 and geek0_.sexe=1

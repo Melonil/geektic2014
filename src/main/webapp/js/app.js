@@ -28,4 +28,5 @@ app.controller('listGeek', function($scope, $http, $location) {
     $http.get('/getGeek',{params:$location.search()}).success(function(listeGeek) {
         $scope.Geeks=listeGeek;
     });
+
 });

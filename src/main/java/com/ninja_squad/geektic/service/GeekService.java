@@ -1,5 +1,6 @@
 package com.ninja_squad.geektic.service;
 
+import com.ninja_squad.geektic.DAO.DAOGeek;
 import com.ninja_squad.geektic.Model.Geek;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
