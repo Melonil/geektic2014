@@ -14,20 +14,50 @@ public class Geek {
     @Column
     private int id;
 
-    @Column
-    public String prenom;
+    public int getId() {
+        return id;
+    }
+
+    public String getPrenom() {
+        return prenom;
+    }
+
+    public String getNom() {
+        return nom;
+    }
+
+    public String getSexe() {
+        if(sexe==1){
+            return "Homme";
+        }else{
+            return "Femme";
+        }
+    }
 
     @Column
-    public String nom;
+    private String prenom;
+
+    @Column
+    private String nom;
+
+    @Column
+    private String email;
+
+    @Column
+    private int sexe;
 
 
     public Geek (){
 
     }
-    public Geek(String nom, String prenom){
+    public Geek(String nom, String prenom,int sexe){
         this.nom=nom;
         this.prenom=prenom;
+        this.sexe=sexe;
     }
 
 
+    public String getEmail() {
+        return email;
+    }
 }

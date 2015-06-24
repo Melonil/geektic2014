@@ -1,2 +1,5 @@
-INSERT INTO USER (nom,prenom,email) VALUES ('Rachidi Alaoui','Yacine','yaci.rachidi@gmail.com')
-INSERT INTO USER (nom,prenom,email) VALUES ('Boudrij','Mohamed','mohamed.boudrij@gmail.com')
+INSERT INTO USER (nom,prenom,email,sexe) VALUES ('Rachidi Alaoui','Yacine','yaci.rachidi@gmail.com',1)
+INSERT INTO USER (nom,prenom,email,sexe) VALUES ('Boudrij','Mohamed','mohamed.boudrij@gmail.com',1)
+INSERT INTO USER (nom,prenom,email,sexe) VALUES ('Marin','Sophie','sophie.marin@gmail.com',0)
+INSERT INTO USER (nom,prenom,email,sexe) VALUES ('Reymond','Clara','clara'.reymond@gmail.com',0)
+INSERT INTO USER (nom,prenom,email,sexe) VALUES ('Dupond','Pierre','pierre'.dupond@gmail.com',1)

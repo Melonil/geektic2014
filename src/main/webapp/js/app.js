@@ -2,7 +2,7 @@ var app = angular.module("geektic", ['ngRoute']);
 
 app.controller('Search', function($scope, $http,$location) {
     $scope.search=function(){
-        $location.path('geek');
+        $location.url('/geek?sexe='+$scope.criteria.sexe);
     }
 
 });
@@ -24,9 +24,8 @@ app.config(['$routeProvider',
     }]);
 
 
-app.controller('listGeek', function($scope, $http) {
-    $http.get('/getGeek').success(function(listeGeek) {
+app.controller('listGeek', function($scope, $http, $location) {
+    $http.get('/getGeek',{params:$location.search()}).success(function(listeGeek) {
         $scope.Geeks=listeGeek;
     });
-
 });

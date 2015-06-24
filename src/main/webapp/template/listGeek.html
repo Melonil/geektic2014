@@ -1,14 +1,17 @@
-<table>
+
+<table  class="table-fill">
     <!-- Ici, on écrira le contenu du tableau -->
     <tr>
-        <th>Name</th>
-        <th>Prenom</th>
-        <th>Sexe</th>
+        <th class="text-left">Nom</th>
+        <th class="text-left">Prenom</th>
+        <th class="text-left">Adresse Mail</th>
+        <th class="text-left">Sexe</th>
     </tr>
 
     <tr ng-repeat="geek in Geeks">
-        <th>{{geek.nom}}</th>
-        <th>{{geek.prenom}}</th>
-        <th>Sexe</th>
+        <td class="text-left">{{geek.nom}}</td>
+        <td class="text-left">{{geek.prenom}}</td>
+        <td class="text-left">{{geek.email}}</td>
+        <td class="text-left">{{geek.sexe}}</td>
     </tr>
 </table>
