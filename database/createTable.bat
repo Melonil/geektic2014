@@ -7,7 +7,7 @@ id integer not null IDENTITY,
 nom varchar(90) not null,
 prenom varchar(90) not null,
 email varchar(90) not null,
-centre_interet integer,
+sexe integer not null,
 gravatar integer
 )
 

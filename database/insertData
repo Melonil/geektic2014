@@ -1,1 +1,2 @@
-INSERT INTO USER (nom,prenom,email) values ("Rachidi Alaoui","Yacine","yaci.rachidi@gmail.com")
+INSERT INTO USER (nom,prenom,email) VALUES ('Rachidi Alaoui','Yacine','yaci.rachidi@gmail.com')
+INSERT INTO USER (nom,prenom,email) VALUES ('Boudrij','Mohamed','mohamed.boudrij@gmail.com')

@@ -1,4 +1,4 @@
-package com.ninja_squad.geektic;
+package com.ninja_squad.geektic.Model;
 
 /**
  * Created by Melonil on 22/06/2015.
@@ -21,6 +21,9 @@ public class Geek {
     public String nom;
 
 
+    public Geek (){
+
+    }
     public Geek(String nom, String prenom){
         this.nom=nom;
         this.prenom=prenom;

@@ -3,9 +3,6 @@ var app = angular.module("geektic", ['ngRoute']);
 app.controller('Search', function($scope, $http,$location) {
     $scope.search=function(){
         $location.path('geek');
-        $http.get('/service/getInteret').success(function(listeGeek) {
-
-        });
     }
 
 });
@@ -19,7 +16,7 @@ app.config(['$routeProvider',
             }).
             when('/geek', {
                 templateUrl: '../template/listGeek.html',
-                controller: 'Search'
+                controller: 'listGeek'
             }).
             otherwise({
                 redirectTo: '/search'
@@ -27,4 +24,9 @@ app.config(['$routeProvider',
     }]);
 
 
+app.controller('listGeek', function($scope, $http) {
+    $http.get('/getGeek').success(function(listeGeek) {
+        $scope.Geeks=listeGeek;
+    });
 
+});
